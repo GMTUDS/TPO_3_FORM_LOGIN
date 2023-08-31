@@ -51,7 +51,7 @@ public class Formulario extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jlLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(layout.createSequentialGroup()
                             .addGap(31, 31, 31)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -59,8 +59,8 @@ public class Formulario extends javax.swing.JFrame {
                                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jtCorreo)
+                                .addComponent(jtPassword)))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(108, 108, 108)
                             .addComponent(jbRegistrar))))
@@ -88,16 +88,7 @@ public class Formulario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbRegistrarActionPerformed
-        /*                                      
-       String corr =jtCorreo.getText();
-       String pass =jtPassword.getText();
-       if (corr.equals("alumno@ulp.edu.ar")&& pass.equals("12345")){
-           JOptionPane.showMessageDialog(this, "BIENVENIDO");
-       } else {
-           JOptionPane.showMessageDialog(this, "USUARIO Y/O CONTRASEÑA INCORRECTOS");
-               }
-       }
-       */
+      
         String email = jtCorreo.getText();
         String contra = jtPassword.getText();
        
